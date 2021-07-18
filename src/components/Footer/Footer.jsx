@@ -14,8 +14,8 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className='pl-7 '>
-                    <button href='https://rickandmortyapi.com/documentation' className='bg-white border rounded-full h-1/5 w-4/5  mt-10 pt-16 ml-10'>
-                        <a className='text-gray-800 font-bold text-4xl -mt-14 '>Watch API docs</a>
+                    <button className='bg-white border rounded-full h-1/5 w-4/5  mt-10 pt-16 ml-10'>
+                        <a href='https://rickandmortyapi.com/documentation' className='text-gray-800 font-bold text-4xl -mt-14 '>Watch API docs</a>
                     </button>
                 </div>
             </div>
