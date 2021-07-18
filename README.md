@@ -1,6 +1,11 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project use Rick and Morty API.
+The design of the web page not is mine but is different to the original design.
+https://www.behance.net/gallery/109947335/Rick-and-Morty-Page/modules/629582807
+This link is for the orginal design the author is Emmanuel Garcia and he gave me permission to reproduce ir, it is not identical because
+there are thing that i did not know how to do but i tried to make it as similar as possible.
 
 ## Available Scripts
 
