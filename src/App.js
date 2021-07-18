@@ -14,8 +14,6 @@ function App() {
     mitical: {},
     character1: {},
     character2: {},
-    character3: {},
-    character4: {},
     search: null
   });
   // const [mitical, setMitical] = useState([]);
@@ -29,21 +27,15 @@ function App() {
     const api = await fetch('https://rickandmortyapi.com/api/character/?species=mythological');
     const character1 = await fetch('https://rickandmortyapi.com/api/character')
     const character2 = await fetch(`https://rickandmortyapi.com/api/character?page=2`)
-    const character3 = await fetch(`https://rickandmortyapi.com/api/character?page=20`)
-    const character4 = await fetch(`https://rickandmortyapi.com/api/character?page=30`)
 
     const respuesta = await character1.json()
     const respuesta2 = await character2.json()
-    const respuesta3 = await character3.json()
-    const respuesta4 = await character4.json()
     const mitical = await api.json();
 
     setCharacters({
       mitical,
       character1: respuesta,
-      character2: respuesta2,
-      character3: respuesta3,
-      character4: respuesta4
+      character2: respuesta2
     })
   }
 

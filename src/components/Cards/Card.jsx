@@ -4,7 +4,7 @@ import Flippy, { FrontSide, BackSide } from 'react-flippy';
 export default function Card(props) {
   return (
     <>
-      <div className=''>
+      <div>
         <div
           className={`${props.pt} ${props.pl}`}
         >
@@ -17,7 +17,9 @@ export default function Card(props) {
               />
             </FrontSide>
             <BackSide
-              style={{ backgroundColor: '#F4F9F4'}}>
+              style={{ backgroundColor: '#F4F9F4'}}
+              className={`${props.w} ${props.h} rounded-2xl shadow-xl`}
+            >
               <p className='font-bold'>{props.name}</p>
               <p className={props.text}><span className='font-bold'>Species: </span>{props.species}</p>
               <p className={props.text}><span className='font-bold'>Status: </span>{props.status}</p>

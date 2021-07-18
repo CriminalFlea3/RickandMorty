@@ -26,7 +26,7 @@ export default function FirstSection({ mitical }) {
 
   return (
     <>
-      <div className="w-screen h-96 max-h-96 cardsContainer">
+      <div className="w-screen h-96 cardsContainer">
         <p className="text-4xl text-white font-bold pl-3 pt-16">
           Mythological Creatures
         </p>
@@ -34,6 +34,7 @@ export default function FirstSection({ mitical }) {
           responsive={responsive}
           infinite={true}
           transitionDuration={1000}
+          className='h-auto pb-11'
         >
           <Card
             img="https://rickandmortyapi.com/api/character/avatar/368.jpeg"

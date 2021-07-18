@@ -29,6 +29,7 @@ export default function SecondCards({ characters }) {
         responsive={responsive}
         infinite={true}
         transitionDuration={1000}
+        className='h-auto pb-11'
       >
         <Card
           img="https://rickandmortyapi.com/api/character/avatar/671.jpeg"
