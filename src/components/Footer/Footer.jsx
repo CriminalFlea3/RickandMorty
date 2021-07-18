@@ -1,4 +1,5 @@
 import React from 'react'
+import { HashLink } from 'react-router-hash-link'
 
 export default function Footer() {
     return (
@@ -23,10 +24,10 @@ export default function Footer() {
                  <p className='text-gray-200 font-bold pt-8 pl-5 text-xl'>Copyright 2021. All Rights Reserved</p>
                 </div>
                 <div className='flex justify-evenly pl-28 pt-9'>
-                    <p className='text-gray-200 font-bold text-xl'>Home</p>
-                    <p className='text-gray-200 font-bold text-xl'>Characters</p>
-                    <p className='text-gray-200 font-bold text-xl'>Show</p>
-                    <p className='text-gray-200 font-bold text-xl'>Games</p>
+                    <HashLink smooth to='/#home' className='text-gray-200 font-bold text-xl'>Home</HashLink>
+                    <HashLink smooth to='/#characters' className='text-gray-200 font-bold text-xl'>Characters</HashLink>
+                    <a href='https://www.adultswim.com/videos/rick-and-morty' className='text-gray-200 font-bold text-xl'>Show</a>
+                    <a href='https://www.adultswim.com/games/virtual-rick-ality' className='text-gray-200 font-bold text-xl'>Games</a>
                 </div>
             </footer>
         </>

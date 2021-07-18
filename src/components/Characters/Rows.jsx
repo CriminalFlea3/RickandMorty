@@ -4,7 +4,7 @@ import Card from "../Cards/Card";
 export default function Rows({ characters }) {
   return (
     <>
-      <div className="grid grid-cols-5 bg-gray-100 ">
+      <div className="grid grid-cols-1 sm:grid-cols-5 bg-gray-100 ">
         {characters.results?.map((card) => (
           <Card
             img={card.image}

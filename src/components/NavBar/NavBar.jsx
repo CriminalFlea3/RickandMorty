@@ -1,20 +1,21 @@
 import React from 'react'
+import { HashLink } from 'react-router-hash-link';
 
 export default function NavBar() {
     return (
         <>
-            <nav className=''>
-                <div className='container flex items-center justify-between py-5 mx-auto text-gray-800 font-bold capitalize'>
+            <nav className='' id='home'>
+                <div className='container flex items-center justify-between py-5 mx-auto text-gray-800 font-bold capitalize invisible sm:visible'>
 
-                    <button className='text-white font-bold text-center sm:mx-6 bg-gray-700 border rounded-3xl w-20 h-9 p-1'>Home</button>
+                    <HashLink smooth to='/#home' className='hover:text-white font-bold text-center hover:bg-gray-700 hover:border rounded-3xl w-20 p-1'>Home</HashLink>
 
-                    <p className="border-b-2 border-transparent hover:text-gray-800 sm:mx-6">Characters</p>
+                    <HashLink smooth to='/#characters' className="hover:text-white font-bold text-center hover:bg-gray-700 hover:border rounded-3xl p-1">Characters</HashLink>
 
                     <img src="img/logo.png" alt="Rick and Morty" className='h-1/5 w-1/5' />
                 
-                    <p className="border-b-2 border-transparent hover:text-gray-800 sm:mx-6">Shows</p>
+                    <a href='https://www.adultswim.com/videos/rick-and-morty' className="hover:text-white font-bold text-center  hover:bg-gray-700 hover:border rounded-3xl  p-1">Shows</a>
 
-                    <p className="border-b-2 border-transparent hover:text-gray-800 sm:mx-6">Games</p>
+                    <a href='https://www.adultswim.com/games/virtual-rick-ality' className="hover:text-white font-bold text-center  hover:bg-gray-700 hover:border rounded-3xl p-1">Games</a>
 
                 </div>
             </nav>  
