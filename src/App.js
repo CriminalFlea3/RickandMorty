@@ -25,8 +25,8 @@ function App() {
   const character = async () => {
 
     const api = await fetch('https://rickandmortyapi.com/api/character/?species=mythological');
-    const character1 = await fetch('https://rickandmortyapi.com/api/character')
-    const character2 = await fetch(`https://rickandmortyapi.com/api/character?page=2`)
+    const character1 = await fetch('https://rickandmortyapi.com/api/character?page=20')
+    const character2 = await fetch(`https://rickandmortyapi.com/api/character?page=15`)
 
     const respuesta = await character1.json()
     const respuesta2 = await character2.json()

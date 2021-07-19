@@ -29,12 +29,12 @@ export default function SecondCards({ characters }) {
         responsive={responsive}
         infinite={true}
         transitionDuration={1000}
-        className='h-auto pb-11'
+        className='h-auto'
       >
         <Card
           img="https://rickandmortyapi.com/api/character/avatar/671.jpeg"
-          h={"h-96"}
-          w={"w-96"}
+          h={"h-80"}
+          w={"w-72"}
           pt={"pt-20"}
           pl={"pl-10"}
         />
@@ -42,7 +42,7 @@ export default function SecondCards({ characters }) {
           <Card
             img={card.image}
             key={card.id}
-            h={"h-96"}
+            h={"h-72"}
             w={"w-96"}
             pt={"pt-20"}
             pl={"pl-10"}
